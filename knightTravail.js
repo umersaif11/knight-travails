@@ -15,7 +15,7 @@ function getValidMoves(array) {
             currentElement[1] >= 0 &&
             currentElement[1] <= 7       
         ) {
-            
+            validMovesArray.push(currentElement);
         }
     }
 }
