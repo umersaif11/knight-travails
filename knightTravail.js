@@ -5,6 +5,9 @@ function getValidMoves(array) {
     ];
     let validMovesArray = [];
     for(let i = 0; i < 8; i++) {
-        
+        let currentElement =
+        knightPossibleMoves[i].map((num, index) => {
+            return num + array[index];
+        });
     }
 }
