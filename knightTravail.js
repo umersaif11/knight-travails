@@ -9,5 +9,13 @@ function getValidMoves(array) {
         knightPossibleMoves[i].map((num, index) => {
             return num + array[index];
         });
+        if(
+            currentElement[0] >= 0 &&
+            currentElement[0] <= 7 &&
+            currentElement[1] >= 0 &&
+            currentElement[1] <= 7       
+        ) {
+            
+        }
     }
 }
