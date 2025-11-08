@@ -18,4 +18,5 @@ function getValidMoves(array) {
             validMovesArray.push(currentElement);
         }
     }
+    return validMovesArray;
 }
