@@ -60,9 +60,13 @@ function knightMoves(initialVertex, targetVertex) {
         let currentElement = current[current.length - 1];
         let isThisVisitedVetex = 
         visitedVertices.some((subarray) => {
-            
+            return areArraysEqual(subarray, currentElement);
         });
 
-        
+        if(!isThisVisitedVetex) {
+            
+            
+            
+        }
     }
 }
