@@ -35,7 +35,12 @@ function knightMoves(initialVertex, targetVertex) {
     if(!initialVertex || !targetVertex) {
         return 'Arrays are required';
     }
-   
+    if(
+        !Array.isArray(initialVertex) ||
+        !Array.isArray(targetVertex) 
+    ) {
+        return 'Arguments should be array';
+    }
    
     
    
