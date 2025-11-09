@@ -31,4 +31,13 @@ function areArraysEqual(array1, array2) {
 
    return true;
 }
-
+function knightMoves(initialVertex, targetVertex) {
+    if(!initialVertex || !targetVertex) {
+        return 'Arrays are required';
+    }
+   
+   
+    
+   
+    
+}
