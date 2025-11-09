@@ -21,7 +21,7 @@ function getValidMoves(array) {
     return validMovesArray;
 }
 function areArraysEqual(array1, array2) {
-   
+    if(array1 === array2) return true;
    
    
 
