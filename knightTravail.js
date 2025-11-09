@@ -74,7 +74,9 @@ function knightMoves(initialVertex, targetVertex) {
                         visitedVertices.push(currentKnightMoves[i]);
                         return [...current, currentKnightMoves[i]];
                         //break;
-                    } 
+                    } else {
+                        queue.push([...current, currentKnightMoves[i]]);
+                    }
                 }
             }
         }
