@@ -67,7 +67,13 @@ function knightMoves(initialVertex, targetVertex) {
             let currentKnightMoves = getValidMoves(currentElement);
             visitedVertices.push(currentElement);
             if(currentKnightMoves.length !== 0) {
-                
+                for(let i = 0; i < currentKnightMoves.length; i++) {
+                    if(areArraysEqual(
+                        currentKnightMoves[i], targetVertex
+                    )) {
+                        
+                    } 
+                }
             }
         }
     }
