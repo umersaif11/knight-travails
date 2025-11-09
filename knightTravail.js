@@ -56,8 +56,8 @@ function knightMoves(initialVertex, targetVertex) {
     let queue = [[initialVertex]];
     let visitedVertices = [];
     while(queue.length > 0) {
-        
-        
+        let current = queue.shift();
+        let currentElement = current[current.length - 1];
        
 
         
