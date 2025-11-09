@@ -65,8 +65,10 @@ function knightMoves(initialVertex, targetVertex) {
 
         if(!isThisVisitedVetex) {
             let currentKnightMoves = getValidMoves(currentElement);
-            
-            
+            visitedVertices.push(currentElement);
+            if(currentKnightMoves.length !== 0) {
+                
+            }
         }
     }
 }
