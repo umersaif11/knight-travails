@@ -41,7 +41,12 @@ function knightMoves(initialVertex, targetVertex) {
     ) {
         return 'Arguments should be array';
     }
-   
+    if(
+        getValidMoves(initialVertex).length === 0 ||
+        getValidMoves(targetVertex).length === 0
+    ) {
+        return 'Insert valid array within bounds';
+    }
     
    
     
