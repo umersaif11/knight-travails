@@ -64,7 +64,7 @@ function knightMoves(initialVertex, targetVertex) {
         });
 
         if(!isThisVisitedVetex) {
-            
+            let currentKnightMoves = getValidMoves(currentElement);
             
             
         }
