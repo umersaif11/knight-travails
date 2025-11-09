@@ -47,7 +47,12 @@ function knightMoves(initialVertex, targetVertex) {
     ) {
         return 'Insert valid array within bounds';
     }
-    
+     if(
+        initialVertex.length !==
+        targetVertex.length
+    ) {
+        return 'Both arrays should have equal lengths';
+    }
    
     
 }
