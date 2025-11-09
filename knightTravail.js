@@ -20,3 +20,4 @@ function getValidMoves(array) {
     }
     return validMovesArray;
 }
+console.log(getValidMoves([3,3]));
