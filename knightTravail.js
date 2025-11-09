@@ -20,4 +20,11 @@ function getValidMoves(array) {
     }
     return validMovesArray;
 }
-console.log(getValidMoves([3,3]));
+function areArraysEqual(array1, array2) {
+   
+   
+   
+
+   
+}
+
