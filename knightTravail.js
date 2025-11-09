@@ -53,6 +53,7 @@ function knightMoves(initialVertex, targetVertex) {
     ) {
         return 'Both arrays should have equal lengths';
     }
-   
+    let queue = [[initialVertex]];
+    let visitedVertices = [];
     
 }
