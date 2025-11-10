@@ -58,24 +58,25 @@ function knightMoves(initialVertex, targetVertex) {
     while(queue.length > 0) {
         let current = queue.shift();
         let currentElement = current[current.length - 1];
-        let currentStringElement = currentElement.toString();
-        let isThisVisitedVetex = 
-        visitedVertices.some((subarray) => {
-            return areArraysEqual(subarray, currentElement);
-        });
+        let currentStringElement = currentElement.toString(); 
+        let currentKnightMoves = getValidMoves(currentElement);
+        visitedVertices.push(currentStringElement);
 
-        if(!isThisVisitedVetex) {
-            let currentKnightMoves = getValidMoves(currentElement);
-            visitedVertices.push(currentStringElement);
-            if(currentKnightMoves.length !== 0) {
-                for(let i = 0; i < currentKnightMoves.length; i++) {
-                    if(areArraysEqual(
-                        currentKnightMoves[i], targetVertex
-                    )) {
-                        visitedVertices.push(currentKnightMoves[i].toString());
-                        return [...current, currentKnightMoves[i]];
-                        //break;
-                    } else {
+        if(currentKnightMoves.length !== 0) {
+            for(let i = 0; i < currentKnightMoves.length; i++) {
+                let currentStringValidMove = 
+                currentKnightMoves[i].toString();
+                if(areArraysEqual(
+                    currentKnightMoves[i], targetVertex
+                )) {
+                    visitedVertices.push(currentStringValidMove);
+                    return [...current, currentKnightMoves[i]];
+                } else {
+                    if(
+                        !visitedVertices.includes(
+                            currentStringValidMove
+                        )
+                    ) {
                         queue.push([...current, currentKnightMoves[i]]);
                     }
                 }
