@@ -54,13 +54,11 @@ function knightMoves(initialVertex, targetVertex) {
         return 'Both arrays should have equal lengths';
     }
     let queue = [[initialVertex]];
-    let visitedVertices = [];
+    let visitedVertices = [initialVertex.toString()];
     while(queue.length > 0) {
         let current = queue.shift();
         let currentElement = current[current.length - 1];
-        let currentStringElement = currentElement.toString(); 
         let currentKnightMoves = getValidMoves(currentElement);
-        visitedVertices.push(currentStringElement);
 
         if(currentKnightMoves.length !== 0) {
             for(let i = 0; i < currentKnightMoves.length; i++) {
