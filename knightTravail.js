@@ -69,7 +69,6 @@ function knightMoves(initialVertex, targetVertex) {
                 if(areArraysEqual(
                     currentKnightMoves[i], targetVertex
                 )) {
-                    visitedVertices.push(currentStringValidMove);
                     return [...current, currentKnightMoves[i]];
                 } else {
                     if(
