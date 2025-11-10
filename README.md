@@ -52,7 +52,7 @@ therefore look like:
 
 ## Testing
 
-Run `node knihtTravail.js`.
+Run `node knightTravail.js`.
 
 Currently script is testing three inputs as following: 
 
