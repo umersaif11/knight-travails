@@ -74,6 +74,7 @@ function knightMoves(initialVertex, targetVertex) {
                             currentStringValidMove
                         )
                     ) {
+                        visitedVertices.push(currentStringValidMove);
                         queue.push([...current, currentKnightMoves[i]]);
                     }
                 }
